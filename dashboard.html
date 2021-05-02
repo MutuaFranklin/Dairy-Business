@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/dashboard.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+
+
+    <title>DAIRY BUSINESS ADMIN</title>
+
+</head>
+<body>
+    <div class="topbar">
+        <h2>eDAIRY MILKMENT SYSTEM</h2>
+        <a class="active" href="index.html"><i class="fas fa-sign-out-alt fa-fw"></i>Log out</a>
+    </div>
+    <div class="sidebar">
+        <div class="card">
+            <div class="card-image">
+                <img src="./Images/avar.png" alt="Avatar" style="width:100%">
+            </div>
+            <div class="usernmame">
+              <h4><b>Franklin Mutua</b></h4> 
+            </div>
+          </div>
+    </div>
+
+    <div class="dashboard-container">
+        <h3>DASHBOARD</h3>
+        <main class="main-container">
+            <div class="milk-production">
+                <div id="production-form">
+                    <form id="productionForm"  >
+                        <h4>Daily Milk Production in litres</h4>
+                        <label for="shed-a"><b>Shed A</b></label>
+                        <input type="number" placeholder="Enter milk production in Shed A" name="shedA" id="shedA" required>
+                    
+                        <label for="shed-b"><b>Shed B</b></label>
+                        <input type="number" placeholder="Enter milk production in Shed B" name="shedB" id="shedB" required>
+
+                        <label for="shed-c"><b>Shed C</b></label>
+                        <input type="number" placeholder="Enter milk production in Shed C" name="shedC" id="shedC" required>
+
+                        <label for="shed-d"><b>Shed D</b></label>
+                        <input type="number" placeholder="Enter milk production in Shed D" name="shedD" id="shedD" required>
+                            
+                        <button id="productButton" type="submit"  onclick="return displayData();">Enter Data</button>
+                
+                    </form>
+
+                </div>
+                <div id="production-data">
+                    <h4>Daily Production Report</h4>
+                    <table id="productionData">
+                      <tr>
+                        <th>Shed A</th>
+                        <th>Shed B</th>
+                        <th>Shed C</th>
+                        <th>Shed D</th>
+                        <th>Total</th>
+                      </tr>
+
+                    </table>
+                    
+                </div>
+                
+            </div>
+
+            <div class="income">
+                <h4>Daily Milk Income</h4>
+                <div id="selling-rates-form">
+                    <form id="incomeForm">
+                        <label for="selling"><b>Selling rate</b></label>
+                        <input type="number" placeholder="Enter the selling rate" name="selling"  id="sp" required>
+                            
+                        <button type="submit" onclick="return displayIncome();">Enter rates</button>
+                    </form>
+
+
+                </div>
+                <div id="income-report">
+                    <h4>Daily Income Report</h4>
+                    <table id="incomeDataTable">
+                      <tr>
+                        <th>Selling Rates</th>
+                        <th>Total Production</th>
+                        <th>Total Income</th>
+                      </tr>
+
+                    </table>
+                          
+
+                </div>
+            </div>
+
+        </main>
+
+        <div class="view-reports">
+          <div id="daily-report">
+            <button id="report-button" type="submit" onclick="productionDisplay();">VIEW DAILY PRODUCTION</button>
+          </div>
+
+          <div id="monthly-report">
+            <button id="report-button" type="submit" onclick="incomeReport();">VIEW INCOME REPORT</button>
+          </div>
+
+          <div id="yearly-report">
+            <button id="report-button" type="submit" onclick="monthlyReport();">VIEW MONTHLY REPORT</button>
+          </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="./Javascript/main.js"></script>
+
+</body>
+</html>
