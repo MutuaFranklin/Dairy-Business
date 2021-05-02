@@ -51,7 +51,7 @@ Type https://github.com/MutuaFranklin/Dairy-Business and press Enter to create y
 
 ## Live link
 
-[Anitas Kitchen Landing Page live link](https://mutuafranklin.github.io/Anitas-Kitchen/)
+[Dairy Business Dashboard Page live link](https://mutuafranklin.github.io/Dairy-Business/)
 
 ## Support and contact details
 
