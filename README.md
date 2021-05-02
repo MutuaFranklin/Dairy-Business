@@ -1,18 +1,16 @@
-# Anitas Kitchen
+#DAIRY BUSINESS
 
 ### Description
 
-A fast food restaurant landing page design providing information of the meals offered, a variety of special offers, and a feature to enable all customers to subscribe and receive daily food items via email.
+A web application dashboard page with data capture and data automation functionalities to ease and increase efficiency in the dairy milk production and income reports.
 
 ### Author
 
-**Franklin Mutua**        -   [Github link](https://github.com/MutuaFranklin/)
-
+**Franklin Mutua** - [Github link](https://github.com/MutuaFranklin/)
 
 ### Date of current version
 
-25/04/2021
-
+02/05/2021
 
 ## Project setup instructions
 
@@ -44,11 +42,11 @@ Open Terminal. Change the current working directory to the location where you wa
 ```
 Type https://github.com/MutuaFranklin/Anitas-Kitchen.git and press Enter to create your local clone.
 ```
+
 ## Technologies Used
 
-* HTML
-* CSS
-
+- HTML
+- CSS
 
 ## Live link
 
@@ -57,7 +55,6 @@ Type https://github.com/MutuaFranklin/Anitas-Kitchen.git and press Enter to crea
 ## Support and contact details
 
 Email: [franklin.mutua@student.moringaschool.com ](franklin.mutua@student.moringaschool.com)
-
 
 ## License
 
