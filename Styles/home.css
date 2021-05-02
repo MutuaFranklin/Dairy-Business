@@ -1,0 +1,86 @@
+/* Styling the entire body */
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The green bar on the top */
+
+.topbar{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    background-color: #28a745;
+}
+
+/* styling the navbar */
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+/* Working on the navbar links */
+
+.navbar a{
+    text-decoration: none;
+    float: left;
+    padding: 44px 16px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #28a745;
+  }
+
+/* floating certain navbar elements to the right */
+
+.navbar-right{
+    float: right;
+}
+
+/* Working on the body container */
+
+.container{
+    width: 100%;
+    height: 650px;
+    background: url(../Images/dairycows.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #28a745;
+
+}
+
+/* .container>p:first-child{
+    font-size: 50px;
+}
+
+.container>p:nth-child(2){
+    font-size: 20px;
+} */
+
+/* Footer styling */
+footer{
+    height: auto;   
+}
+
+footer>.slogan{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 2;
+    margin-top: 40px;
+    color: black ;  
+
+    
+}
