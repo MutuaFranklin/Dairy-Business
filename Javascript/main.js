@@ -109,6 +109,16 @@ function displayData(){
 
     row++;
 
+    document.getElementById("A").innerHTML = "Your production in Shed A "  + shedA + " litres per day";
+
+    document.getElementById("B").innerHTML = "Your production in Shed B "  + shedB + " litres per day";
+
+    document.getElementById("C").innerHTML = "Your production in Shed C "  + shedC + " litres per day";
+
+    document.getElementById("D").innerHTML = "Your production in Shed D "  + shedD + " litres per day";
+
+    document.getElementById("total").innerHTML = "Your total  production  "  + total + " litres per day";
+
     document.getElementById("productionForm").reset();
 
     return false;
@@ -119,47 +129,7 @@ function displayData(){
 }
 
 
-function displayIncome(){
-    var shedA = document.getElementById("shedA").value; 
-    var shedB = document.getElementById("shedB").value; 
-    var shedC = document.getElementById("shedC").value; 
-    var shedD = document.getElementById("shedD").value; 
-    var total = parseFloat(shedA) + parseFloat(shedB)+ parseFloat(shedC)+ parseFloat(shedD);
-    var sellingPrice = document.getElementById("sp").value; 
-    var income = parseFloat(sellingPrice) * parseFloat(totalPro);
-    //var totalIncome = document.getElementById("shedC").value; 
 
-
-
-     
-    var  table = document.getElementById("incomeDataTable");
-    
-    var row =1;
-
-
-    var newRow = table.insertRow(row);
-
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-    var cell3 = newRow.insertCell(2);
-
-    cell1.innerHTML = sellingPrice;
-    cell2.innerHTML = total;
-    cell3.innerHTML = income;
-   
-
-
-
-    row++;
-
-    document.getElementById("incomeForm").reset();
-
-    return false;
-
-    
-
-
-}
 
 
 function productionDisplay(){

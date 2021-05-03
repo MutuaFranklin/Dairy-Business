@@ -122,6 +122,16 @@ padding: 10px 16px;
 
 }
 
+.productionReport>p{
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  line-height: 2;
+
+
+}
+
+
+
 .monthlyIncome{
   width: 50%;
   background-color: lightgrey;
