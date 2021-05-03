@@ -121,6 +121,34 @@ function displayData(){
 
     document.getElementById("productionForm").reset();
 
+
+    var January_income = parseFloat(sellingPrice) * parseFloat(31); 
+    var February_income =  parseFloat(sellingPrice) * parseFloat(29); 
+    var March_income =  parseFloat(sellingPrice) * parseFloat(31); 
+    var April_income =  parseFloat(sellingPrice) * parseFloat(30); 
+    var May_income =  parseFloat(sellingPrice) * parseFloat(31); 
+    var June_income =  parseFloat(sellingPrice) * parseFloat(30); 
+    var July_income =  parseFloat(sellingPrice) * parseFloat(31); 
+    var August_income =  parseFloat(sellingPrice) * parseFloat(31); 
+    var September_income =  parseFloat(sellingPrice) * parseFloat(30); 
+    var October_income = parseFloat(sellingPrice) * parseFloat(31); 
+    var November_income =  parseFloat(sellingPrice) * parseFloat(30); 
+    var December_income =  parseFloat(sellingPrice) * parseFloat(31); 
+
+    document.getElementById("jan").innerHTML = "Your income for January is "  + January_income + " litres per day";
+    document.getElementById("feb").innerHTML = "Your income for February is "  + February_income + " litres per day";
+    document.getElementById("march").innerHTML = "Your income for March is "  + March_income + " litres per day";
+    document.getElementById("april").innerHTML = "Your income for April is "  + April_income + " litres per day";
+    document.getElementById("may").innerHTML = "Your income for May is "  + May_income + " litres per day";
+    document.getElementById("june").innerHTML = "Your income for June is "  + June_income + " litres per day";
+    document.getElementById("july").innerHTML = "Your income for July is "  + July_income + " litres per day";
+    document.getElementById("aug").innerHTML = "Your income for August is "  + August_income + " litres per day";
+    document.getElementById("sept").innerHTML = "Your income for September is "  + September_income + " litres per day";
+    document.getElementById("oct").innerHTML = "Your income for October is "  + October_income + " litres per day";
+    document.getElementById("nov").innerHTML = "Your income for November is "  + November_income+ " litres per day";
+    document.getElementById("dec").innerHTML = "Your income for December is "  + December_income+ " litres per day";
+
+
     return false;
 
     
