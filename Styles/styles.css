@@ -152,6 +152,8 @@ h4{
   text-align: center;
 }
 
+/* form input styles */
+
 input[type=number] {
   width: 100%;
   padding: 10px 18px;
