@@ -14,7 +14,7 @@ A web application dashboard page with data capture and data automation functiona
 
 ## Project Image view
 
-![eDAIRY Image View](<img src=“Images/eDAIRY.png”>)
+![eDAIRY Image View](<img src=“Images/eDAIRY.png” raw=true style=“margin-right: 10px;”>)
 
 ## Project setup instructions
 
