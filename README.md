@@ -12,6 +12,10 @@ A web application dashboard page with data capture and data automation functiona
 
 02/05/2021
 
+## Project Image view
+
+![Test Image 1](<img src=“.images/eDAIRY.png”>)
+
 ## Project setup instructions
 
 These instructions will get you a copy of the project up and running on your local machine for development.
