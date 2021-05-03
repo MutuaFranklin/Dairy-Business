@@ -1,17 +1,4 @@
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyA8TUtaoB3g9mwxKJPCjfcprOMzHcJxSyU",
-    authDomain: "dairy-business.firebaseapp.com",
-    projectId: "dairy-business",
-    storageBucket: "dairy-business.appspot.com",
-    messagingSenderId: "217143874734",
-    appId: "1:217143874734:web:838ac3435e72a73ed0893f",
-    measurementId: "G-XN9H4HQV1Q"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+
 
 const auth = firebase.auth();
 
