@@ -1,5 +1,4 @@
-
-  function signUp(e) {
+function signUp(e) {
     var username = document.getElementById("username");
     var email = document.getElementById("email");
     var password = document.getElementById("password");
@@ -62,6 +61,13 @@ function displayData(){
     var shedD = document.getElementById("shedD").value; 
     
     var total = parseFloat(shedA) + parseFloat(shedB)+parseFloat(shedC)+parseFloat(shedD);
+    var sellingPrice = document.getElementById("sp").value; 
+    var dIncome = parseFloat(sellingPrice) * parseFloat(total);
+    var wIncome = parseFloat(dIncome) * parseFloat(7);
+    var yIncome = parseFloat(dIncome) * parseFloat(366);
+
+
+
     
 
 
@@ -78,6 +84,13 @@ function displayData(){
     var cell3 = newRow.insertCell(2);
     var cell4 = newRow.insertCell(3);
     var cell5 = newRow.insertCell(4);
+    var cell6 = newRow.insertCell(5);
+    var cell7 = newRow.insertCell(6);
+    var cell8 = newRow.insertCell(7);
+    var cell9 = newRow.insertCell(8);
+
+
+
 
 
     cell1.innerHTML = shedA;
@@ -85,6 +98,12 @@ function displayData(){
     cell3.innerHTML = shedC;
     cell4.innerHTML = shedD;
     cell5.innerHTML = total;
+    cell6.innerHTML = sellingPrice;
+    cell7.innerHTML = dIncome;
+    cell8.innerHTML = wIncome;
+    cell9.innerHTML = yIncome;
+
+
 
 
 
@@ -148,7 +167,6 @@ function productionDisplay(){
     var shedB = document.getElementById("shedB").value; 
     var shedC = document.getElementById("shedC").value; 
     var shedD = document.getElementById("shedD").value; 
-
 
     alert(" Your production in Shed A 510 litres per day \n Your production in Shed B 308 litres per day \n Your production in Shed C 486 litres per day \n Your production in Shed D 572 litres per day \n The total production is 1876 litres per day");
 
@@ -263,4 +281,3 @@ function monthlyReport(){
 // document.getElementById("D").innerHTML = shedD + " litres per day";
 
 // document.getElementById("total").innerHTML = totalDailyProduction + " litres per day";
-

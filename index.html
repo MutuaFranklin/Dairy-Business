@@ -46,21 +46,45 @@
 
                         <label for="shed-d"><b>Shed D</b></label>
                         <input type="number" placeholder="Enter milk production in Shed D" name="shedD" id="shedD" required>
+
+                        <label for="selling"><b>Selling rate</b></label>
+                        <input type="number" placeholder="Enter the selling rate" name="selling"  id="sp" required>
+                            
                             
                         <button id="productButton" type="submit"  onclick="return displayData();">Enter Data</button>
                 
                     </form>
 
+                    <div id="general-report">
+                      <div class="productionReport">
+                        <h4>Daily Production Report</h4>
+                        <p id="A"></p>
+                        <p id="B"></p>
+                        <p id="C"></p>
+                        <p id="D"></p>
+                        <p id="total"></p>
+                      </div>
+                      <div class="monthlyIncome">
+                        <h4>Monthly Income Report</h4>
+                      </div>
+
+
+                    </div>
+
                 </div>
                 <div id="production-data">
-                    <h4>Daily Production Report</h4>
+                    <h4>Dairy Production and Income Report</h4>
                     <table id="productionData">
                       <tr>
                         <th>Shed A</th>
                         <th>Shed B</th>
                         <th>Shed C</th>
                         <th>Shed D</th>
-                        <th>Total</th>
+                        <th>Total Daily Production</th>
+                        <th>Selling Rates</th>
+                        <th>Total Daily Income</th>
+                        <th>Expected weekly Income</th>
+                        <th>Expected yearly Income</th>
                       </tr>
 
                     </table>
@@ -69,32 +93,7 @@
                 
             </div>
 
-            <div class="income">
-                <h4>Daily Milk Income</h4>
-                <div id="selling-rates-form">
-                    <form id="incomeForm">
-                        <label for="selling"><b>Selling rate</b></label>
-                        <input type="number" placeholder="Enter the selling rate" name="selling"  id="sp" required>
-                            
-                        <button type="submit" onclick="return displayIncome();">Enter rates</button>
-                    </form>
-
-
-                </div>
-                <div id="income-report">
-                    <h4>Daily Income Report</h4>
-                    <table id="incomeDataTable">
-                      <tr>
-                        <th>Selling Rates</th>
-                        <th>Total Production</th>
-                        <th>Total Income</th>
-                      </tr>
-
-                    </table>
-                          
-
-                </div>
-            </div>
+           
 
         </main>
 
