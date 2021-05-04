@@ -122,18 +122,18 @@ function displayData(){
     document.getElementById("productionForm").reset();
 
 
-    var January_income = parseFloat(sellingPrice) * parseFloat(31); 
-    var February_income =  parseFloat(sellingPrice) * parseFloat(29); 
-    var March_income =  parseFloat(sellingPrice) * parseFloat(31); 
-    var April_income =  parseFloat(sellingPrice) * parseFloat(30); 
-    var May_income =  parseFloat(sellingPrice) * parseFloat(31); 
-    var June_income =  parseFloat(sellingPrice) * parseFloat(30); 
-    var July_income =  parseFloat(sellingPrice) * parseFloat(31); 
-    var August_income =  parseFloat(sellingPrice) * parseFloat(31); 
-    var September_income =  parseFloat(sellingPrice) * parseFloat(30); 
-    var October_income = parseFloat(sellingPrice) * parseFloat(31); 
-    var November_income =  parseFloat(sellingPrice) * parseFloat(30); 
-    var December_income =  parseFloat(sellingPrice) * parseFloat(31); 
+    var January_income = parseFloat(dIncome) * parseFloat(31); 
+    var February_income =  parseFloat(dIncome) * parseFloat(29); 
+    var March_income =  parseFloat(dIncome) * parseFloat(31); 
+    var April_income =  parseFloat(dIncome) * parseFloat(30); 
+    var May_income =  parseFloat(dIncome) * parseFloat(31); 
+    var June_income =  parseFloat(dIncome) * parseFloat(30); 
+    var July_income =  parseFloat(dIncome) * parseFloat(31); 
+    var August_income =  parseFloat(dIncome) * parseFloat(31); 
+    var September_income =  parseFloat(dIncome) * parseFloat(30); 
+    var October_income = parseFloat(dIncome) * parseFloat(31); 
+    var November_income =  parseFloat(dIncome) * parseFloat(30); 
+    var December_income =  parseFloat(dIncome) * parseFloat(31); 
 
     document.getElementById("jan").innerHTML = "Your income for January is "  + January_income + " litres per day";
     document.getElementById("feb").innerHTML = "Your income for February is "  + February_income + " litres per day";
